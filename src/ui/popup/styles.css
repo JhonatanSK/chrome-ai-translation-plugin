@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: local("Space Grotesk"), local("SpaceGrotesk");
+}
+
+:root {
+  --bg: #f5f1e8;
+  --ink: #2b2435;
+  --accent: #6f4ac9;
+  --accent-dark: #4d2f9b;
+}
+
+body {
+  margin: 0;
+  font-family: "SpaceGrotesk", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.popup {
+  width: 320px;
+  padding: 16px;
+  background: linear-gradient(160deg, #f5f1e8, #ede3ff);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+header p {
+  margin: 4px 0 16px;
+  font-size: 12px;
+}
+
+.actions {
+  display: grid;
+  gap: 8px;
+}
+
+button {
+  border: 1px solid #2b2435;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+button.primary:hover {
+  background: var(--accent-dark);
+}
+
+.status {
+  margin-top: 12px;
+  display: flex;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.settings {
+  margin-top: 12px;
+  font-size: 12px;
+  display: grid;
+  gap: 4px;
+}
+
+.settings a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
